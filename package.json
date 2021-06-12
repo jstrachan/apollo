@@ -26,12 +26,7 @@
     "rollback": "lerna run --scope=server rollback",
     "exp": "yarn --cwd packages/mobile exp",
     "exp-publish": "lerna run --scope=mobile exp-publish --stream",
-    "tests:watch": "lerna run --parallel tests:watch --stream",
-    "lint": "yarn eslint && yarn tslint",
-    "eslint": "eslint --fix --ext js --ext jsx --ext json .",
-    "tslint": "tslint --fix -p tsconfig.json -c tslint.json",
     "heroku-postbuild": "lerna run --parallel heroku-postbuild --stream",
-    "precommit": "lint-staged",
     "postinstall": "opencollective postinstall"
   },
   "lint-staged": {
