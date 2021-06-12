@@ -26,6 +26,8 @@
     "rollback": "lerna run --scope=server rollback",
     "exp": "yarn --cwd packages/mobile exp",
     "exp-publish": "lerna run --scope=mobile exp-publish --stream",
+    "test": "yarn tests && yarn lint",
+    "tests": "lerna run --parallel tests --stream",
     "tests:watch": "lerna run --parallel tests:watch --stream",
     "lint": "yarn eslint && yarn tslint",
     "eslint": "eslint --fix --ext js --ext jsx --ext json .",
