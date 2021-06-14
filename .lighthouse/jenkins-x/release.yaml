@@ -42,7 +42,6 @@ spec:
           resources: {}
         - name: promote-changelog
           resources: {}
-          script: sleep infinity
         - name: promote-helm-release
           resources: {}
         - name: promote-jx-promote
