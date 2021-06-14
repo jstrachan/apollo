@@ -17,3 +17,4 @@ RUN yarn && (test -f ./packages/server/dev-db.sqlite3 || yarn seed) && yarn buil
 CMD [ "yarn", "start" ]
 
 
+
