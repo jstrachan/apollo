@@ -11,6 +11,6 @@ COPY . .
 
 EXPOSE 8080
 
-RUN yarn && (test -f ./packages/server/dev-db.sqlite3 || yarn seed) && yarn build && yarn start
+CMD [ "yarn && (test -f ./packages/server/dev-db.sqlite3 || yarn seed) && yarn build && yarn start" ]
 
 
