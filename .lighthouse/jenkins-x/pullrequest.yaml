@@ -32,7 +32,6 @@ spec:
           resources: {}
         - name: build-container-build
           resources: {}
-        - script: sleep infinity
         - name: promote-jx-preview
           resources: {}
   podTemplate: {}
